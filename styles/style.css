@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+}
+.flex-reverse{
+    flex-direction: row;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.jc-space-between{
+    justify-content: space-between;
+}
+.ai-center{
+    align-items: center;
+}
+.page-container {
+    max-width: 1940px;
+    width: 100%; 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+    background-color: #DDDDDD;
+    padding: 48px 52px;
+}
+.container1200{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+/*----top header----*/
+.page-header__logo a{
+    display: inline-block;
+    font-size: 40px;
+    font-family: "Poppins Extra-Bold";
+    color: #1A1A1A;
+    font-weight: bold;
+}
+.page-header__logo p{
+    font-size: 13px;
+    font-family: 'Montserrat';
+    color: #B3B3B3;
+    opacity: 1;
+}
+.page-header__logo span{
+    display: inline-block;
+    background-color: #0081FF;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+.page-header__about-me{
+    position: relative;
+    width: 170px;
+}
+.page-header__about-me p{
+    color: #1C1C1C;
+    font-size: 160px;
+    font-family:'Glacial Indifference-Bold';
+}
+.page-header__about-me a{
+    position: absolute;
+    top: 65px;
+    right: -20px;
+    left: -20px;
+    font-size: 43px;
+    font-family:'Glacial Indifference-Bold';
+    color: #373737;
+} 
+/*----header slider img----*/
+.header-slider{
+    width:350px;
+    height: 400px;
+}
+.header-slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px;
+}
+/*-------header about-------*/
+.header-about{
+    font-family:'Montserrat';
+}
+.header-about h2{
+    font-size: 49px;
+    color: #212121;
+}
+.header-about h1{
+    font-size: 71px;
+    color: #212121;
+    font-family:'Glacial Indifference-Bold' ;
+}
+.header-about p{
+    font-size: 23px;
+    color: #212121;
+}
+.header-soc-icons{
+    width: 150px;
+    height: 32px;
+    margin-top: 90px;
+}
+.header-soc-icons img{
+    width: 100%;
+    height: 100%;
+}
+.persent-underline{
+    display: block;
+    background-color:#E93656;
+    width: 340px;
+    height: 6px;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+.satisfied-client{
+    position: relative;
+    font-size: 24px;
+    font-family:'Montserrat-Bold';
+    color: #212121;
+    margin-top: 181px;
+    margin-bottom: 46px;
+}
+.pink {
+    color:#E93656;
+}
+.satisfied-client p{
+    position: absolute;
+    bottom: 15px;
+    right: 90px;
+}
+/*---------end header----------*/
+@media (max-width:1224px) {
+    .header-about h2{
+        font-size: 29px;
+    }
+    .header-about h1{
+        font-size: 51px;
+    }
+    .header-about p{
+        font-size: 13px;
+    }
+    .header-slider{
+        margin-right: 50px;
+    }
+}
+@media (max-width:800px) {
+    .header-slider-and-about{
+        flex-wrap: wrap;
+    }
+    .header-slider{
+        margin-bottom: 30px;
+    }
+    .page-header__about-me{
+        width: 150px;
+    }
+    .page-header__about-me p{
+        font-size: 140px;
+    }
+    .page-header__about-me a{
+        top: 65px;
+        right: -20px;
+        left: -10px;
+        font-size: 33px;
+    } 
+    .top-header{
+        flex-wrap: wrap;
+    }
+    .header-slider{
+        width:100%;
+        height: 300px;
+    }
+    .header-about h1{
+        font-size: 31px;
+    }
+    .header-about p{
+        font-size: 7px;
+    }
+    .header-slider{
+        margin-right: 30px;
+    }
+    .persent-underline{
+        width: 100%;
+        height: 6px;
+    }
+}
