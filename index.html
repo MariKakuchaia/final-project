@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/font.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="page-container">
+    <main class="page-container">
         <div class="container">
             <div class="header-page">
                  <!--top header-->
@@ -51,7 +52,41 @@
                 <span class="persent-underline"></span>
             </div>
         </div>
-    </div>
+        <!--second section start-->
+        <section class="about-section">
+            <div class="container1200 flex wrap">
+                <div class="about-text-box flex1">
+                    <h2>Mariam Kakuchaia</h2>
+                    <h5>Front-End Web Developer</h5>
+                    <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Adipisci nam libero cupiditate, veritatis officia quibusdam 
+                            nisi impedit? Autem quas reiciendis, sed quis veniam, assumenda odit
+                             ratione aperiam, cupiditate explicabo praesentium!
+                    </p>
+                    <button class="hire-button">
+                         <a href="#">Hire Me</a>
+                     </button>
+                </div>
+                <div class="my-img-box flex2 flex-jc-center">
+                    <img src="image/slider-img3.jpg" alt="">
+                </div>
+                <div class="skills flex1 flex-jc-center">
+                    <div class="skills-list">
+                        <h4>Html <span>(90%)</span></h4>
+                        <div class="skill-wrapper" id="markup-wrappper-line"><div class="skill markup-percent show-on-scroll"></div></div>
+            
+                        <h4>CSS <span>(80%)</span></h4>
+                        <div class="skill-wrapper" id="styles-precents-line"><div class="skill css-percent show-on-scroll"></div></div>
+            
+                        <h4>JavaScript <span>(70%)</span></h4>
+                        <div class="skill-wrapper" id="js-wrappper-line"><div class="skill Js-percent show-on-scroll"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--second section end-->
+    </main>
     <script src="main.js"></script>
 </body>
 </html>

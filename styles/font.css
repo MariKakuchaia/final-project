@@ -42,3 +42,26 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/Muli.eot');
+    src: url('../fonts/Muli.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Muli.woff2') format('woff2'),
+        url('../fonts/Muli.woff') format('woff'),
+        url('../fonts/Muli.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Muli-regular';
+    src: url('../fonts/Muli-Regular.eot');
+    src: url('../fonts/Muli-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Muli-Regular.woff2') format('woff2'),
+        url('../fonts/Muli-Regular.woff') format('woff'),
+        url('../fonts/Muli-Regular.ttf') format('truetype'),
+        url('../fonts/Muli-Regular.svg#Muli-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
