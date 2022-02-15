@@ -24,7 +24,8 @@ function skillAnimationScroll() {
         let skillsList = document.querySelector('.skills-list');
         let skills = document.querySelectorAll(".skill");
         let contentPosition = skillsList.getBoundingClientRect().top;
-        let screenPosition = window.innerHeight / 1.6;
+        let screenPosition = window.innerHeight;
+        
 
         if(contentPosition < screenPosition) {
             for(let i = 0; i < skills.length; i++) {

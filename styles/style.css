@@ -37,9 +37,18 @@ a{
     background-color: #DDDDDD;
     padding: 48px 52px;
 }
+.container-width100{
+    width: 100%;
+    padding: 56px 0 60px;
+}
 .container1200{
     max-width: 1400px;
     width: 90%;
+    margin: 0 auto;
+}
+.container1000{
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
 }
 /*----top header----*/
@@ -90,7 +99,7 @@ a{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 60px;
+    border-radius: 10px;
 }
 /*-------header about-------*/
 .header-about{
@@ -139,9 +148,9 @@ a{
     color:#E93656;
 }
 .satisfied-client p{
-    position: absolute;
     bottom: 15px;
     right: 90px;
+    position: absolute;
 }
 /*---------end header----------*/
 /*-------sec section start-------*/
@@ -245,6 +254,22 @@ a{
 .Js-percent.active {
     width: 70%;
 }
+.bg-131A36-blue{
+    background-color: #131A36;
+}
+.container1000 h2{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-family: 'Glacial Indifference-Bold'
+}
+.container1000 p{
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: 'Muli';
+}
+.container1000 img{
+    margin-right: 30px;
+}
 @media (max-width:1224px) {
     .header-about h2{
         font-size: 29px;
@@ -257,6 +282,9 @@ a{
     }
     .header-slider{
         margin-right: 50px;
+    }
+    .container1000 img{
+        margin-right: 10px;
     }
     /*----header resp end---*/
 }
@@ -300,8 +328,16 @@ a{
         height: 6px;
     }
     /*----header resp end---*/
+    /*-- second-sec info--*/
+    .container1000 img{
+        width: 60px;
+    }
+    .skill-wrapper{
+        width: 250px;
+    }
 }
-@media (max-width:645px){
+@media (max-width:651px){
+    /*---second sec----*/
     .my-img-box{
         margin: 40px 0;
     }
@@ -312,20 +348,64 @@ a{
         display: flex;
         justify-content: center;
     }
+    /*-- second-sec info--*/
+    .container1000 img{
+        width: 70px;
+        margin-left: 10px;
+    }
+    .container1000 p{
+        font-size: 15px;
+    }
+    .flex-column-media{
+        flex-direction: column;
+    }
+    .mg-bottom-10px{
+        margin-bottom: 10px;
+    }
 }
 @media (max-width:500px) {
+    .header-slider{
+        width:180px;
+        height: 280px;
+    }
+    .header-slider img{
+        width: 180px;
+        height: 280px;
+        border-radius: 10px;
+    }
+    .persent-underline{
+        width: 100%;
+        right: 0;
+    }
+    .satisfied-client p{
+        right: 0;
+    }
     .about-text-box{
         width: 100%;
         text-align: left;
         margin:20px;
     }
     .my-img-box{
-        width: 100%px;
-        height: 400px;
+        width: 100%;
+        height: 350px;
     }
     .my-img-box img{
-        width: 290px;
+        width:250px;
         height: 100%;
         object-fit: cover;
+    }
+    .container1000 h2{
+        font-size: 25px;
+    }
+    .container1000 p{
+        font-size: 13px;
+    }
+    .container1000 img{
+        width: 50px; 
+    }
+}
+@media (max-width:284px) {
+    .skill-wrapper{
+        width: 90%;
     }
 }
