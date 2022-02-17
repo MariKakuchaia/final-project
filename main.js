@@ -39,4 +39,28 @@ function skillAnimationScroll() {
     })
 }
 
-skillAnimationScroll()
+skillAnimationScroll();
+
+
+function showServiceText(){
+    let servicesBox = document.querySelectorAll(".services-box");
+    
+    for(let i = 0; i < servicesBox.length; i++){
+
+        servicesBox[i].addEventListener("mouseover", function() {
+            let servicesChild = this.children;
+            servicesChild[0].style.display = "none";
+            servicesChild[1].style.display = "block";
+        })
+
+        servicesBox[i].addEventListener("mouseout", function() {
+         let servicesChild = this.children;
+            servicesChild[0].style.display = "block";
+            servicesChild[1].style.display = "none";
+        })
+    }
+}
+
+showServiceText()
+
+

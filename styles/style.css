@@ -37,10 +37,6 @@ a{
     background-color: #DDDDDD;
     padding: 48px 52px;
 }
-.container-width100{
-    width: 100%;
-    padding: 56px 0 60px;
-}
 .container1200{
     max-width: 1400px;
     width: 90%;
@@ -49,7 +45,11 @@ a{
 .container1000{
     max-width: 1000px;
     width: 100%;
-    margin: 0 auto;
+    margin: 60px auto;
+}
+.maxWidth1940{
+    max-width:1940px;
+    width: 100%;
 }
 /*----top header----*/
 .page-header__logo a{
@@ -157,9 +157,6 @@ a{
 .flex1{
     flex:1;
 }
-.flex2{
-    flex: 2;
-}
 /*----- about text------*/
 .about-section{
     padding:135px 0px 100px;
@@ -254,6 +251,7 @@ a{
 .Js-percent.active {
     width: 70%;
 }
+/*---info section----*/
 .bg-131A36-blue{
     background-color: #131A36;
 }
@@ -276,7 +274,58 @@ a{
     background-color: #E93656;
     border-radius: 50%;
 }
+/*--services section--*/
+.services-box{
+    width: calc(100% / 4 - 20px);
+    height: 360px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    text-align: center;
+    cursor: pointer;
+}
+.services-img-title{
+    display: block;
+}
+.services-box h2{
+    font-family: 'GlacialIndifference-Bold';
+    color: #222222;
+    font-size: 22px;
+    margin-top: 15px;
+}
+.service-text{
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 111px 20px;
+    color: #ffffff;
+    background-color: #15263E;
+}
+.service-text h2{
+    font-family: 'GlacialIndifference-Bold';
+    color: #FFFFFF;
+    margin-bottom: 19px;
+}
+.services-main-div{
+    padding: 203px 0 160px;
+}
+/*----recommendation section-----*/
+.recommendation-sec div{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.recommendation-sec img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
 @media (max-width:1224px) {
+    /*---header resp--*/
     .header-about h2{
         font-size: 29px;
     }
@@ -289,24 +338,20 @@ a{
     .header-slider{
         margin-right: 50px;
     }
+    /*---second sec resp----*/
     .container1000 img{
         margin-right: 20px;
     }
     .container1000{
         padding: 10px;
     }
-    /*----header resp end---*/
+    /*----services sec resp----*/
+    .services-main-div{
+        padding: 50px 0;
+    }
 }
 @media (max-width:800px) {
-    .header-slider-and-about{
-        flex-wrap: wrap;
-    }
-    .header-slider{
-        margin-bottom: 30px;
-    }
-    .page-header__about-me{
-        width:90px;
-    }
+    /*----header-resp----*/
     .page-header__about-me p{
         font-size: 80px;
     }
@@ -316,12 +361,20 @@ a{
         left: -10px;
         font-size: 20px;
     } 
-    .top-header{
+    .header-slider-and-about{
         flex-wrap: wrap;
     }
     .header-slider{
+        margin-bottom: 30px;
+        margin-right: 30px;
         width:100%;
         height: 300px;
+    }
+    .page-header__about-me{
+        width:90px;
+    }
+    .top-header{
+        flex-wrap: wrap;
     }
     .header-about h1{
         font-size: 31px;
@@ -329,14 +382,10 @@ a{
     .header-about p{
         font-size: 7px;
     }
-    .header-slider{
-        margin-right: 30px;
-    }
     .persent-underline{
         width: 100%;
         height: 6px;
     }
-    /*----header resp end---*/
     /*-- second-sec info--*/
     .container1000 img{
         width: 60px;
@@ -344,8 +393,14 @@ a{
     .skill-wrapper{
         width: 250px;
     }
+    /*----services sec resp---*/
+    .services-box{
+        width: calc(100% / 2 - 20px);
+        height: 300px;
+    } 
 }
 @media (max-width:651px){
+     /*----header-resp----*/
     .page-header__logo a{
         font-size: 30px;
     }
@@ -356,6 +411,7 @@ a{
         width: 5px;
         height: 5px;
     }
+     /*-- second-sec resp--*/
     .my-img-box{
         margin: 40px 0;
     }
@@ -366,13 +422,16 @@ a{
         display: flex;
         justify-content: center;
     }
-    /*-- second-sec info--*/
+    /*--info-resp--*/
     .container1000 img{
         width: 70px;
         margin-left: 10px;
     }
     .container1000 p{
         font-size: 15px;
+    }
+    .container1000{
+        margin:20px auto
     }
     .flex-column-media{
         flex-direction: column;
@@ -382,6 +441,7 @@ a{
     }
 }
 @media (max-width:500px) {
+    /*----header-resp----*/
     .page-header__about-me{
         width:60px;
         margin-left: 15px;
@@ -411,6 +471,7 @@ a{
     .satisfied-client p{
         right: 0;
     }
+    /*---second sec resp----*/
     .about-text-box{
         width: 100%;
         text-align: left;
@@ -425,6 +486,7 @@ a{
         height: 100%;
         object-fit: cover;
     }
+    /*----info resp----*/
     .container1000 h2{
         font-size: 25px;
     }
@@ -438,6 +500,11 @@ a{
         width: 40px;
         height: 40px;
         margin-right: 20px;
+    }
+    /*---services sec resp---*/
+    .services-box{
+        width: calc(100% / 1 - 20px);
+        height: 250px;
     }
 }
 @media (max-width:284px) {
