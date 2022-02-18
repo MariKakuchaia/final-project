@@ -20,8 +20,14 @@ a{
 .jc-space-between{
     justify-content: space-between;
 }
+.jc-center{
+    justify-content: center;
+}
 .ai-center{
     align-items: center;
+}
+.flex-culumn-media{
+    flex-direction: column-reverse;
 }
 .page-container {
     max-width: 1940px;
@@ -313,17 +319,73 @@ a{
     padding: 203px 0 160px;
 }
 /*----recommendation section-----*/
-.recommendation-sec div{
+.recommendation-sec{
     position: relative;
     width: 100%;
-    height: 400px;
+    
 }
 .recommendation-sec img{
-    width: 100%;
-    height: 400px;
+    max-width: 100%;
     object-fit: contain;
 }
-
+.absolute{
+    position: absolute;
+}
+.absolute-prop{
+    left: 10%;
+    top: 40%;
+}
+.recommendation-img-box{
+    width: 150px;
+    height: 150px;
+    margin: 0 50px;
+    border: 2px dashed #ffffff;
+    border-radius: 50%;
+}
+.recommendation-img-box img{
+    width: 80%;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+.recommendation-img-box img:hover{
+    width: 90%;
+}
+.recommendation-par-div{
+    width: 300px;
+}
+.recommendation-par{
+    font-size: 15px;
+    color: #FFFFFF;
+    font-family: 'Roboto-light';
+    width: 100%;
+    text-align: right;
+}
+.span-box span{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #E93656;
+    background-color: #15263E;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    transition: all 0.5s linear;
+}
+.span-box span:hover{
+    background-color: #E93656;
+    border-color: #15263E;
+}
+.recommendation-info p{
+    margin: 30px 0 9px;
+    color: #E93656;
+    font-size: 13px;
+    font-family: 'Roboto-regular';
+}
+.recommendation-info h2{
+    color: #FFFFFF;
+    font-size: 28px;
+    font-family: 'Glacial Indifference-Bold';
+}
 @media (max-width:1224px) {
     /*---header resp--*/
     .header-about h2{
@@ -348,6 +410,53 @@ a{
     /*----services sec resp----*/
     .services-main-div{
         padding: 50px 0;
+    }
+    /*----recommendation section resp-----*/
+    .absolute-prop{
+        left: 10%;
+        top: 30%;
+    }
+}
+@media (max-width:1050px) {
+    .span-box span{
+        margin-left: 40px;
+        transition: none;
+    }
+}
+@media (max-width:900px) {   
+    .recommendation-info p{
+        margin: 30px 0 9px;
+        font-size: 15px;
+    }
+    .recommendation-info h2{
+        font-size: 20px;
+    }
+    .recommendation-par-div{
+        width: 120px;
+        height: 100px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .recommendation-par{
+        font-size: 15px;
+        width: 100%;
+        text-align: left;
+    }
+    .span-box span{
+        display: block;
+        width: 15px;
+        height: 15px;
+        margin-bottom: 10px;
+        margin-left: 150px;
+    }
+    .absolute-prop{
+        left: 5%;
+        top: 30%;
+    }
+    .recommendation-img-box{
+        width: 100px;
+        height: 100px;
+        margin: 0 50px;
     }
 }
 @media (max-width:800px) {
@@ -398,6 +507,13 @@ a{
         width: calc(100% / 2 - 20px);
         height: 300px;
     } 
+    .span-box span{
+        margin-left: 35px;
+    }
+    .absolute-prop{
+        left: 3%;
+        top: 20%;
+    }
 }
 @media (max-width:651px){
      /*----header-resp----*/
@@ -438,6 +554,37 @@ a{
     }
     .mg-bottom-10px{
         margin-bottom: 10px;
+    }
+    /*----recommendation-section resp---*/
+    .recommendation-par-div{
+        width: 200px;
+        height: 60px;
+    }
+    .recommendation-info{
+        margin-left: 20px;
+    }
+    .recommendation-info p{
+        font-size: 10px;
+    }
+    .recommendation-info h2{
+        font-size: 15px;
+    }
+    .recommendation-img-box{
+        order: -1;
+        margin: 0 10px;
+    }
+    .absolute-prop{
+        left: 10%;
+        top: 20%;
+    }
+    .recommendation-info img{
+        display: none;
+    }
+    .no-wrap500{
+        flex-wrap: nowrap;
+    }
+    .span-box span{
+        margin-left:30px;
     }
 }
 @media (max-width:500px) {
@@ -505,6 +652,10 @@ a{
     .services-box{
         width: calc(100% / 1 - 20px);
         height: 250px;
+    }
+    .absolute-prop{
+        left: 2%;
+        top: 10%;
     }
 }
 @media (max-width:284px) {

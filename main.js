@@ -63,4 +63,36 @@ function showServiceText(){
 
 showServiceText()
 
+function recommendations(){
 
+    let button1 = document.querySelector(".button1");
+    let button2 = document.querySelector(".button2");
+    let button3 = document.querySelector(".button3");
+    let recommendationPar =document.querySelector(".recommendation-par");
+    let personRecImg = document.querySelector(".person-rec-img");
+    let profession = document.querySelector(".profession");
+    let nameRecommendationPerson=document.querySelector(".name-recommendation-person")
+
+
+    button1.addEventListener("click",()=>{
+        recommendationPar.innerText="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore..";
+        personRecImg.src="image/recommendation/person1.png";
+        profession.innerText="Graphic Designer";
+        nameRecommendationPerson.innerText="Mau Thomas";
+    })
+    button2.addEventListener("click",()=>{
+        recommendationPar.innerText="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptatum dolorum et odit nemo, laboriosam debitis animi cupiditate, voluptates atque porro, alias ut. Saepe, eos. Illo voluptatum magni reiciendis perferendis...";
+        personRecImg.src="image/recommendation/person2.png";
+        profession.innerText="web-developer";
+        nameRecommendationPerson.innerText="Lily Thomas";
+    })
+
+    button3.addEventListener("click",()=>{
+        recommendationPar.innerText=".Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptatum dolorum et odit nemo, laboriosam debitis animi cupiditate,..";
+        personRecImg.src="image/recommendation/person3.png";
+        profession.innerText="project-meneger";
+        nameRecommendationPerson.innerText="Nick jonson";
+    })
+}
+
+recommendations()
