@@ -214,12 +214,12 @@ a{
 }
 /*--------img-box--------*/
 .my-img-box{
-    width: 300px;
+    width: 350px;
     height: 500px;
 }
 .my-img-box img{
-    width: 300px;
-    height: 100%;
+    width: 350px;
+    height: 500px;
     object-fit: cover;
 }
 /*----skills-----*/
@@ -320,20 +320,8 @@ a{
 }
 /*----recommendation section-----*/
 .recommendation-sec{
-    position: relative;
-    width: 100%;
-    
-}
-.recommendation-sec img{
-    max-width: 100%;
-    object-fit: contain;
-}
-.absolute{
-    position: absolute;
-}
-.absolute-prop{
-    left: 10%;
-    top: 40%;
+    background-color: #15263E;
+    height: 400px;
 }
 .recommendation-img-box{
     width: 150px;
@@ -412,10 +400,6 @@ a{
         padding: 50px 0;
     }
     /*----recommendation section resp-----*/
-    .absolute-prop{
-        left: 10%;
-        top: 30%;
-    }
 }
 @media (max-width:1050px) {
     .span-box span{
@@ -448,10 +432,6 @@ a{
         height: 15px;
         margin-bottom: 10px;
         margin-left: 150px;
-    }
-    .absolute-prop{
-        left: 5%;
-        top: 30%;
     }
     .recommendation-img-box{
         width: 100px;
@@ -510,10 +490,6 @@ a{
     .span-box span{
         margin-left: 35px;
     }
-    .absolute-prop{
-        left: 3%;
-        top: 20%;
-    }
 }
 @media (max-width:651px){
      /*----header-resp----*/
@@ -558,10 +534,10 @@ a{
     /*----recommendation-section resp---*/
     .recommendation-par-div{
         width: 200px;
-        height: 60px;
+        height: 80px;
     }
     .recommendation-info{
-        margin-left: 20px;
+        order: -2;
     }
     .recommendation-info p{
         font-size: 10px;
@@ -572,19 +548,10 @@ a{
     .recommendation-img-box{
         order: -1;
         margin: 0 10px;
+        margin: 20px;
     }
-    .absolute-prop{
-        left: 10%;
-        top: 20%;
-    }
-    .recommendation-info img{
-        display: none;
-    }
-    .no-wrap500{
-        flex-wrap: nowrap;
-    }
-    .span-box span{
-        margin-left:30px;
+    .calc-media651{
+        width: calc(100%/2);
     }
 }
 @media (max-width:500px) {
@@ -653,9 +620,25 @@ a{
         width: calc(100% / 1 - 20px);
         height: 250px;
     }
-    .absolute-prop{
-        left: 2%;
-        top: 10%;
+    /*----recommendation sec resp-----*/
+    .recommendation-info img{
+        display: none;
+    }
+    .recommendation-info{
+        order: -1;
+    }
+    .recommendation-info p{
+        margin-top: 5px;
+    }
+    .recommendation-par-div{
+        margin: 10px 0;
+        height: 120px;
+    }
+    .span-flex-media500{
+        display: flex;
+    }
+    .span-box span{
+        margin-left:10px;
     }
 }
 @media (max-width:284px) {
