@@ -53,6 +53,11 @@ a{
     width: 100%;
     margin: 60px auto;
 }
+.container1350{
+    max-width: 13500px;
+    width: 100%;
+    margin: 0 auto;
+}
 .maxWidth1940{
     max-width:1940px;
     width: 100%;
@@ -374,6 +379,141 @@ a{
     font-size: 28px;
     font-family: 'Glacial Indifference-Bold';
 }
+/*---last project---*/
+.project-box{
+    position: relative;
+}
+.project-box-text{
+    display: none;
+    position: absolute;
+    top:0;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgba(77, 72, 72, 0.753);
+}
+.project-box-text h2{
+    font-size: 27px;
+    color: #FFFFFF;
+    font-family: 'Glacial Indifference-Bold';
+}
+.project-box-text p{
+    color: #DDDDDD;
+    font-size: 17px;
+    margin: 10px 0;
+}
+.project-list-box{
+    background-color: #15263E;
+    margin-right: 30px;
+    flex:1;
+    height: 350px;
+}
+.project-wrapper-box{
+    flex: 2;
+}
+.last-project-title{
+    color: #2E2E2E;
+    font-size: 70px;
+    font-family: 'Glacial Indifference-Bold';
+    margin: 120px 0 55px;
+}
+.project-list-box ul{
+    padding: 40px;
+}
+.project-list-box li{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: 'Glacial Indifference-Bold';
+    margin-bottom:15px;
+}
+.project-img-box{
+    width: 300px;
+    height: 330px;
+}
+.project-img-box img{
+    width: 300px;
+    height: 330px;
+    object-fit: cover;
+}
+.heart-icon-div{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #E93656;
+    border-radius: 50%;
+}
+.heart-icon-div img{
+    width: 40%;
+}
+/*----latest article----*/
+.latest-articles-title{
+    flex-direction: column;
+    margin: 170px 0 70px;
+}
+.latest-articles-title h5{
+    font-size: 13px;
+    color: #2ED279;
+    font-family: 'Glacial Indifference-Bold';
+}
+.latest-articles-title h2{
+    font-size: 70px;
+    color: #2E2E2E;
+    font-family: 'Glacial Indifference-Bold';
+}
+.article-information{
+    width: 40%;
+    margin:50px 112px ;
+}
+.blocks{
+    background-color: #FAFAFA;
+    width: 95%;
+}
+.article-information h3{
+    font-size: 40px;
+    color: #161616;
+    font-family: 'Glacial Indifference-Bold';
+    margin: 20px 0;
+}
+.article-information h4{
+    color: #888888;
+    font-size: 14px;
+    font-family: 'Muli';
+    margin: 20px 0;
+} 
+.article-information p {
+    color: #494949;
+    font-size: 16px;
+    font-family: 'Muli';
+}
+.aplication-icon-div{
+    background-color: #E93656;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.icon-white-div{
+    background-color: #ffffff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.article-photos{
+    width: 50%;
+    height: 490px;
+}
+.article-photos img{
+    width: 100%;
+    height: 100%;
+}
+.date{
+    background-color: #15263E;
+    color: #E93656;
+    font-size: 30px;
+    transform: rotate(180deg);
+    writing-mode:vertical-rl;
+    height: 490px;
+    width:10%;
+}
 @media (max-width:1224px) {
     /*---header resp--*/
     .header-about h2{
@@ -405,6 +545,18 @@ a{
     .span-box span{
         margin-left: 40px;
         transition: none;
+    }
+}
+@media (max-width:920px) {
+    .project-img-box{
+        max-width: 270px;
+        width: 100%;
+        height: 270px;
+    }
+    .project-img-box img{
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
     }
 }
 @media (max-width:900px) {   
@@ -553,6 +705,10 @@ a{
     .calc-media651{
         width: calc(100%/2);
     }
+    .last-project-title{
+        font-size: 40px;
+        margin: 80px 0 20px;
+    }
 }
 @media (max-width:500px) {
     /*----header-resp----*/
@@ -640,9 +796,23 @@ a{
     .span-box span{
         margin-left:10px;
     }
+    .wrap-media{
+        flex-wrap: wrap;
+    }
+    .project-list-box li{
+        font-size: 15px;
+        margin-bottom:5px;
+    }
+    .project-list-box{
+        margin-right: 0px;
+        width: 100%;
+    }
 }
 @media (max-width:284px) {
     .skill-wrapper{
         width: 90%;
     }
+}
+.bg{
+    background-color: red;
 }
