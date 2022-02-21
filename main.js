@@ -154,3 +154,36 @@ showRosaText()
             console.error(error);
         })
     });
+
+
+
+//data filter
+
+function dataFilter(){
+
+const liItem=document.querySelectorAll(".project-list-box ul li");
+const projectBox=document.querySelectorAll(".project-box");
+
+liItem.forEach(li=>{
+    li.addEventListener("click",function(){
+        liItem.forEach(li =>{
+            li.className="";
+        })
+        li.className="activeproject";
+    
+
+        // console.log(li.textContent);
+        let value = li.textContent;
+        updatedValue = value.replace("_"," ");
+
+        projectBox.forEach(content=>{
+        content.style.display="none";
+        if(content.getAttribute("data-filter") == updatedValue.toLowerCase() || updatedValue=="All"){
+            content.style.display="flex";
+        }
+    })
+    })
+    
+})
+}
+dataFilter();

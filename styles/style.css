@@ -383,7 +383,7 @@ a{
     font-family: 'Glacial Indifference-Bold';
 }
 /*---last project---*/
-.project-box{
+.project-relative{
     position: relative;
 }
 .project-box-text{
@@ -411,6 +411,8 @@ a{
     margin-right: 30px;
     flex:1;
     height: 350px;
+    max-width: 200px;
+    width: 100%;
 }
 .project-wrapper-box{
     flex: 2;
@@ -421,14 +423,18 @@ a{
     font-family: 'Glacial Indifference-Bold';
     margin: 120px 0 55px;
 }
-.project-list-box ul{
-    padding: 40px;
-}
 .project-list-box li{
     font-size: 20px;
     color: #FFFFFF;
     font-family: 'Glacial Indifference-Bold';
     margin-bottom:15px;
+    cursor: pointer;
+}
+.activeproject{
+    color: #E93656;
+}
+.project-list-box ul{
+    padding: 40px;
 }
 .project-img-box{
     width: 300px;
@@ -910,6 +916,10 @@ a{
     .rosa-content{
         flex-wrap: wrap;
     }
+    .project-list-box{
+        max-width: 300px;
+        width: 100%;
+    }
 }
 @media (max-width:500px) {
     /*----header-resp----*/
@@ -977,6 +987,9 @@ a{
         width: calc(100% / 1 - 20px);
         height: 250px;
     }
+    .service-text{
+        padding: 50px 20px;
+    }
     /*----recommendation sec resp-----*/
     .recommendation-info img{
         display: none;
@@ -1019,6 +1032,9 @@ a{
     }
     .project-img-box{
         margin:20px auto
+    }
+    ul li.active{
+        color: #E93656;
     }
     .date{
         width:100%;
