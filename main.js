@@ -117,4 +117,40 @@ function showRosaText(){
         })
     }
 }
+
 showRosaText()
+
+
+
+    let name= document.getElementById("name");
+    let email=document.getElementById("email");
+    let website=document.getElementById("website");
+    let message=document.getElementById("message")
+
+
+    let form=document.getElementById("form");
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+        
+        const formData={
+            name: name.value,
+            email: email.value,
+            website: website.value,
+            message: message.value,
+        }
+
+        fetch("http://api.kesho.me/v1/user-test/contact",{
+            method:'post',
+            body: JSON.stringify(formData),
+            headers: {
+                'Content-type': 'application/json',
+            }
+        }).then(function(response){
+            return response.text();
+        }).then(function(text){
+            console.log(text);
+        }).catch(function(error){
+            console.error(error);
+        })
+    });
