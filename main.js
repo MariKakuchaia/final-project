@@ -96,3 +96,25 @@ function recommendations(){
 }
 
 recommendations()
+
+
+function showRosaText(){
+    let rosaItem = document.querySelectorAll(".rosa-item");
+
+    for(let i = 0; i < rosaItem.length; i++){
+
+        rosaItem[i].addEventListener("mouseover", function() {
+            let rosaChild = this.children;
+            rosaChild[0].style.display = "none";
+            rosaChild[1].style.display = "block";
+            rosaChild[1].style.display="flex"
+        })
+
+        rosaItem[i].addEventListener("mouseout", function() {
+            let rosaChild = this.children;
+            rosaChild[0].style.display = "block";
+            rosaChild[1].style.display = "none";
+        })
+    }
+}
+showRosaText()
