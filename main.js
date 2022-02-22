@@ -187,3 +187,22 @@ liItem.forEach(li=>{
 })
 }
 dataFilter();
+
+function showInfo(){
+    let projectRelative = document.querySelectorAll(".project-relative");
+
+    for(let i = 0; i < projectRelative.length; i++){
+
+        projectRelative[i].addEventListener("mouseover", function() {
+            let Child = this.children;
+            Child[1].style.display = "block";
+        })
+
+        projectRelative[i].addEventListener("mouseout", function() {
+            let Child = this.children;
+            Child[0].style.display = "block";
+            Child[1].style.display = "none";
+        })
+    }
+}
+showInfo()

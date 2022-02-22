@@ -85,4 +85,24 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Poppins-semiBold';
+    src: url('../fonts/Poppins-SemiBold.eot');
+    src: url('../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Jaapokki-regular';
+    src: url('../fonts/Jaapokki-Regular.eot');
+    src: url('../fonts/Jaapokki-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Jaapokki-Regular.woff2') format('woff2'),
+        url('../fonts/Jaapokki-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
